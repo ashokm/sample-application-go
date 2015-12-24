@@ -6,4 +6,5 @@ go:
  - tip
 
 script:
- - go test -v ./...
+ - go get github.com/ashokm/sample-application-go
+ - go build

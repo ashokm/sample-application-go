@@ -17,3 +17,4 @@ deploy:
   file: sample-application-go
   on:
     repo: ashokm/sample-application-go
+    tags: true

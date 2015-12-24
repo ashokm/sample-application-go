@@ -5,7 +5,7 @@ Sample application code (Go)
 
 This is "go get"-able and Travis CI buildable project.
 
-## Local Build and Test
+## Local Build
 
 You can use go get command:
 

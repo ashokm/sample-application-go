@@ -1,0 +1,18 @@
+language: go
+go:
+- 1.5
+script:
+- go get github.com/ashokm/sample-application-go
+- go build
+env:
+  global:
+    secure: k//JepS1SEqaDfCUscd3EnjsiFhwe1nA8ARKqpCuS4ilKyogdaoS9jb4YcP27GRrME0dKWB9Je2VfcC7N1O0pXUve7VMn2UYo3LpPt06AUegKESRI/OH7V70HbSXtDx1Kl2KQSObVV20RSDV/BGB2IvNSQeQe2Dh2+MQPUhA32qZLn12XQCIkhPF2o3qkCcUn3B4OvCJFr2/aGg6sGxsouS5LfFASRawoeuliF3hh2NHJ7AloKOu2nds1ckK8TCRdPq5chL5C3w5HKSKm2dJio5J60/JihkJXwkQu3kDUOsLY0XkRrTwmdz3ozngaWcMomNrBPCSZUOdBk0KZE30RTkl+bJggiwHbiHhM4UWNrsOFn8QkWpSCtcNoX3Y32BKNyFz/uydsIbQBSLfRuYFk/HouoOSZGXiWPa71coBYFqt8W3UXhLJgcgSfmI4a9hV/qkUWm/qVdGW7+smFrbgKXeqQl5YwTWezvByx6mh7D/9znWCLN/wCnMUH45+YRnDFPIp2MI29wKidIzgxj2MilwqTZEtIGBeSq9FE6BkLiiJs9WwEIG7cVzg1UfKG4tgzNoBjyA9NboyKfKfkgG83Hp/0Jm1wZMH3b/KIxVYqRnBoTtnVyADUACe5lC0w7Ia+rFg8ag5U+zFQSL/t/5dybkeMXg2R4Qov74RuVBEDis=
+deploy:
+  provider: releases
+  api_key:
+    secure: qr5csL2BCCl8O/LOZI2p3QSUIwUMX6Tr2p2XKBMTWiFSLv6lHpnZy6OSpC95FgAdRVAGNIuihBf/Zp39AGS47Ulyaw9lUFCBRrOc87cdUl8Vj7UvGN0yYb9T900B9kOsY3w9Ys+naOeUJj0Li62sFK/FPPocMY5Xs5qXKSfeO3R5OjntmXa/pKKk4Y7UjPOE8gUvGm6UtNbFSaTmVgK14Hrp31o/Ha/cmUzvGynkvfFJG7/LgME9ScO7TTihfKSh8fCdL9exUIbK2f9AaaJ9so+b3uSuUOmSaMiLsaIkuLSt87iwZgDVXhE/qRGc28t+PRURg/QKEsGKF1mg5j1I7nzaR7XlwjfYE9d5IoNoGVV2l0FMe8317gUsNBlTQAJUGV5Te7VYbyVFnhqGldSr88FXW1yhMiohEKmyt+bargVeIb6OxqiiPTgsI+MlZYyDcKgotTQX96R/IVgE6O7NqHl9n89OX8hGuwC0vGx28GLQ9kVb03yht4HQXIZBQWDvHjDD6q0xYxnUa5aeZQNwvRCbAWUDar2Y+Ift7kogFur011TssiSI/muvgrZLkbUAnJs/a5b+XP/F+gvmuvH3hBnz74IqMiGDq3fXpVZ/TpAzP2IFW8DfuGXc/FxqJ/NU3j1KY0CCuQoO1XwW7rytCH/udrYW2SRGKEO+DGs5Jhc=
+  file: sample-application-go
+  skip_cleanup: true
+  on:
+    repo: ashokm/sample-application-go
+    tags: true
